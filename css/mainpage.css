@@ -1,3 +1,17 @@
+@import url(https://www.nerdfonts.com/assets/css/webfont.css);
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('fonts/JetBrainsMono-Regular.woff2') format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+em,
+strong {
+  font-synthesis: none;
+}
+
 * {
   background-color: #fafafa;
   margin: 0;
@@ -6,14 +20,11 @@
 }
 
 body {
-  font-family: serif;
+  font-family: serif, 'JetBrainsMono', monospace;
   font-weight: 300;
   font-size: 36px;
   line-height: 1.8em;
   color: #0a0a0a;
-}
-
-.header {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -21,4 +32,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+a:link,
+a:visited {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+a:hover > .github {
+  color: #fa0000;
+  text-decoration: none;
+}
+a:hover > .telegram {
+  color: #28a7e8;
+  text-decoration: none;
 }
