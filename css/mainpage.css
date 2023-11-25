@@ -1,49 +1,48 @@
 @import url(https://www.nerdfonts.com/assets/css/webfont.css);
 
-@font-face {
-  font-family: 'JetBrainsMono';
-  src: url('fonts/JetBrainsMono-Regular.woff2') format('woff');
-  font-style: normal;
-  font-weight: 300;
-}
-
-em,
-strong {
-  font-synthesis: none;
-}
-
 * {
-  background-color: #fafafa;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: serif, 'JetBrainsMono', monospace;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 1.8em;
-  color: #0a0a0a;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  background-color: #4c5354;
+  background-image: linear-gradient(to top right, #4c5354, #717679);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.logo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
+.links {
+  color: #a2a2a2;
+}
+
+.links-container {
+  list-style-type: none;
+  position: absolute;
+  line-height: 1.25em;
+  font-size: 3.5rem;
+  top: 10%;
+  left: 5%;
+}
+
+.fa-universal-access {
+  margin-top: 0.15em;
+}
+
 a:link,
 a:visited {
-  color: #0a0a0a;
+  color: #a2a2a2;
   text-decoration: none;
 }
-a:hover > .github {
-  color: #fa0000;
-  text-decoration: none;
-}
-a:hover > .telegram {
-  color: #28a7e8;
+a:hover {
+  color: #ccc;
   text-decoration: none;
 }
