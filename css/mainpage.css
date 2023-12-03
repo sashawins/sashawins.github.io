@@ -13,28 +13,12 @@ body {
   background-attachment: fixed;
 }
 
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
 .links {
   color: #a2a2a2;
 }
 
-.links-container {
+.links-container nav li {
   list-style-type: none;
-  position: absolute;
-  line-height: 1.25em;
-  font-size: 3.5rem;
-  top: 10%;
-  left: 5%;
-}
-
-.fa-universal-access {
-  margin-top: 0.15em;
 }
 
 a:link,
@@ -45,4 +29,61 @@ a:visited {
 a:hover {
   color: #ccc;
   text-decoration: none;
+}
+
+/* Mobile Styles ---------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  .logo {
+    width: 65%;
+    order: 1;
+    align-self: center;
+  }
+
+  .links-container {
+    order: 2;
+    align-self: center;
+  }
+
+  .links-container nav li {
+    padding: 1vw;
+    float: left;
+  }
+
+  .links-container nav li i {
+    font-size: 8vw;
+    /* container-name: sidebar; */
+  }
+}
+
+/* Desktop Styles --------------------------------------------------------- */
+@media only screen and (min-width: 961px) {
+  .links-container {
+    position: absolute;
+    line-height: 1.25em;
+    font-size: 3.5rem;
+    top: 10%;
+    left: 5%;
+  }
+
+  .logo {
+    width: 52.5%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55%);
+  }
+
+  .fa-universal-access {
+    margin-top: 0.15vh;
+  }
 }
